@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Dancing+Script&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="./static/style.css" />
+    <title>
+      About | Oly's Chai-Ghar
+    </title>
+  </head>
+  <body style="background-color: #2AAA8A;">
+    <!-- Top Header -->
+    <div class="py-2 border-bottom">
+      <div class="container d-flex justify-content-between align-items-center flex-wrap text-dark small">
+        <!-- Left: Contact Info -->
+        <div class="mb-2 mb-md-0">
+          <i class="bi bi-envelope-fill me-2 text-white"></i><strong class="text-white">olyschaighar@gmail.com</strong>
+          <span class="mx-3 text-white">|</span>
+          <i class="bi bi-telephone-fill me-2 text-white"></i><strong class="text-white">+91 98107 87715</strong>
+        </div>
+
+        <!-- Right: Social Icons -->
+        <div>
+          <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="text-white me-3"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" class="text-white"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg py-3">
+      <div class="container">
+        <!-- Brand/Logo -->
+        <a class="navbar-brand d-flex flex-column align-items-start" href="{% url 'home' %}">
+          <div class="d-flex align-items-center">
+            <span class="fs-2 fw-bold" style="font-family: 'Pacifico', cursive; color: #ffa347;">Oly’s</span>
+            <span class="fs-5 fw-bold ms-1 text-warning">Chai-Ghar</span>
+          </div>
+          <small class="text-light text-warning ms-1" style="font-size: 1rem;">Tea | Snacks | Gossips</small>
+        </a>
+
+        <!-- Toggler for mobile -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+
+        <!-- Navigation Menu -->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarMenu">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-light fw-semibold mx-2" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light fw-semibold mx-2" href="./menu.html">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light fw-semibold mx-2" href="./about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light fw-semibold mx-2" href="./frenchisee.html">Franchise</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light fw-semibold mx-2" href="./contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light fw-semibold mx-2" href="./gallery.html">Gallery</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Hero Banner -->
+  <section class="py-5 text-white text-center" style="background: url( './static/images/aboutbanner1.png') no-repeat center center / cover; width: 100%; height: 100vh; height: 500px;">
+    <div class="container py-5">
+      <h1 class="display-4 fw-bold">About Oly’s Chai-Ghar</h1>
+      <p class="lead">“TEA | SNACKS | GOSSIPS”</p>
+    </div>
+  </section>
+
+  <!-- Our Story -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4" data-aos="fade-right">
+          <img src="./static/images/olysowner.jpeg" class="img-fluid ownerpic" style="width: 400px; height: 500px;" alt="Our Story" />
+        </div>
+        <div class="col-lg-6" data-aos="fade-left">
+          <h2 class="fw-bold" style="color: #ff7b00;">Our Story</h2>
+          <p class="lead text-white">Started with a passion for chai and a dream to create homely moments, Oly’s Chai-Ghar has grown into a soulful space offering 100+ varieties of teas served in traditional kullhads.</p>
+          <p class="text-white">
+            <strong class="fw-bold">Satpal Arora, Founder – Olys Chai Ghar</strong> "I started Olys Chai Ghar with one belief — a cup of tea can spark conversations, build bonds, and inspire dreams. Today, it’s more than tea — it’s a place where Tea, Snacks & Gossips come alive.
+
+            Join us Let’s build a chai culture the world remembers.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Vision & Mission -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold text-dark">Our Vision & Mission</h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6" data-aos="fade-up">
+          <div class="p-4 bg-white shadow rounded h-100">
+            <h4 class="text-warning fw-bold"><i class="bi bi-eye"></i> Vision</h4>
+            <p>To make Olys Chai Ghar a global symbol of warmth, friendship, and everyday joy — where one cup of tea can start a story, spark a dream, or build a future.</p>
+          </div>
+        </div>
+        <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="p-4 bg-white shadow rounded h-100">
+            <h4 class="text-success fw-bold"><i class="bi bi-bullseye"></i> Mission</h4>
+            <p>To craft unforgettable tea experiences that feel like home — no matter where you are in the world.
+
+              To inspire entrepreneurship through our franchise model, making success accessible to every chai lover.
+
+              To turn “Tea. Snacks. Gossips.” into a movement — a lifestyle that brings people together, one sip at a time.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">Meet Our Team</h2>
+        <p class="text-muted">The passionate people behind Oly's Chai Ghar</p>
+      </div>
+
+      <div class="row g-4 justify-content-center">
+        <!-- Team Member -->
+        <div class="col-md-4">
+          <div class="card border-0 shadow-sm h-100 text-center p-3" style="background-color: #2AAA8A;" data-aos="zoom-in" data-aos-delay="100">
+            <img src="static/images/olysteam1.jpeg" class="rounded-circle mx-auto mb-3" alt="Team Member" style="width: 140px; height: 140px; object-fit: cover;" />
+            <h5 class="fw-bold text-white mb-0">Hemant Patil</h5>
+            <small class="text-white">Co-founder | Oly’s Chai Ghar</small>
+            <p class="mt-3 text-white">Two decades in retail taught me how products sell — but Oly’s Chai Ghar is about how moments are felt.
+            Here, tea isn’t just a drink — it’s a pause, a smile, a memory in the making. That’s the heart we pour into every cup.</p>
+          </div>
+        </div>
+
+        <!-- Team Member -->
+        <div class="col-md-4">
+          <div class="card border-0 shadow-sm h-100 text-center p-3" style="background-color: #2AAA8A;"  data-aos="zoom-in" data-aos-delay="100"> 
+            <img src="static/images/olysteam2.jpeg" class="rounded-circle mx-auto mb-3" alt="Team Member" style="width: 140px; height: 140px; object-fit: cover;" />
+            <h5 class="fw-bold text-white mb-0">Ashwani Pandey</h5>
+            <small class="text-white">Product Manager – Oly’s Chai Ghar</small>
+            <p class="mt-3 text-white">From the first tender leaf to the final ladle, I ensure every cup of chai at Oly’s reflects uncompromising quality and authentic flavor. As a Tea Sommelier, I don’t just taste — I carefully craft each blend to perfection. At Oly’s Chai Ghar, perfection isn’t a goal; it’s our everyday promise.</p>
+          </div>
+        </div>
+
+        <!-- Team Member -->
+        <!-- <div class="col-md-4">
+          <div class="card border-0 shadow-sm h-100 text-center p-3">
+            <img src="{% static 'images/team3.jpg' %}" class="rounded-circle mx-auto mb-3" alt="Team Member" style="width: 140px; height: 140px; object-fit: cover;" />
+            <h5 class="fw-bold mb-0">Rahul Mehta</h5>
+            <small class="text-muted">Marketing Head</small>
+            <p class="mt-3 text-muted">Drives Oly's brand presence with creative campaigns and impactful promotions.</p>
+            <div>
+              <a href="#" class="text-dark me-2"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="text-dark me-2"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="text-dark"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Join Us CTA -->
+  <section class="py-5 text-white">
+    <div class="container text-center" data-aos="fade-up" data-aos-delay="300">
+      <h2 class="display-5 fw-bold mb-3" style="font-family: 'Pacifico', cursive;">Become a Part of Oly’s Chai-Ghar Family!</h2>
+      <p class="lead mb-4" style="max-width: 700px; margin: auto;">
+        Start your own chai journey with over <strong>100+ tea varieties</strong>, authentic recipes, and a growing fanbase. Join a rapidly expanding brand with desi vibes and modern touch!
+      </p>
+      <a href="./frenchisee.html" class="btn btn-warning btn-lg px-5 py-3 fw-semibold rounded-pill shadow">Apply for Franchise Now</a>
+      <p class="mt-3">
+        <small><i class="bi bi-phone"></i> Call us: +91 98107 87715 | <i class="bi bi-envelope"></i> olyschaighar@gmail.com</small>
+      </p>
+    </div>
+  </section>
+  <footer class="text-white pt-5 pb-4 text-white border-top">
+      <div class="container text-md-left">
+        <div class="row text-md-left">
+          <!-- Company Info -->
+          <div class="col-md-4 col-lg-4 col-xl-3 mx-auto mt-3">
+            <span class="fs-2 fw-bold text-warning" style="font-family: 'Pacifico', cursive;">Oly’s</span>
+            <span class="fs-5 ms-1 text-light" style="font-family: 'Dancing Script', cursive;">Chai-ghar</span>
+            <p>Serving 100+ tea varieties with ghar jaisa swaad. A perfect place for chai lovers and cozy conversations.</p>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold text-light" >Quick Links</h5>
+            <p>
+              <a href="./about.html" class="text-white" style="text-decoration: none;">About Us</a>
+            </p>
+            <p>
+              <a href="./menu.html" class="text-white" style="text-decoration: none;">Menu</a>
+            </p>
+            <p>
+              <a href="./frenchisee.html" class="text-white" style="text-decoration: none;">Frenchisee</a>
+            </p>
+            <p>
+              <a href="./contact.html" class="text-white" style="text-decoration: none;">Contact</a>
+            </p>
+          </div>
+
+          <!-- Franchise CTA -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold text-light">Join Us</h5>
+            <p>
+              <a href="./frenchisee.html" class="text-white" style="text-decoration: none;">Get Franchise</a>
+            </p>
+            <p>
+              <a href="#career" class="text-white" style="text-decoration: none;">Careers</a>
+            </p>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold text-light">Contact</h5>
+            <p>
+              <i class="fas fa-home mr-3"></i> Head Office: Third Floor, Property No. 6, Avtar Enclave, Paschim Vihar, New Delhi - 110063 (India)
+            </p>
+            <p>
+              <i class="fas fa-envelope mr-3"></i> olyschaighar@gmail.com
+            </p>
+            <p>
+              <i class="fas fa-phone mr-3"></i> +91 98107 87715
+            </p>
+          </div>
+        </div>
+
+        <hr class="mb-4" />
+
+        <!-- Bottom Row -->
+        <div class="row align-items-center">
+          <div class="col-md-7 col-lg-8">
+            <p>
+              © 2025 <strong>Oly’s Chai-Ghar</strong> — All Rights Reserved
+            </p>
+          </div>
+          <div class="col-md-5 col-lg-4">
+            <div class="text-center text-md-right">
+              <a href="#" class="text-white me-4"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="text-white me-4"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="text-white me-4"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="text-white"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <a href="https://wa.me/9810787715?text=Hi%20Oly's%20Chai%2C%20Ghar!%20I'm%20brewing%20some%20curiosity.%20Let’s%20talk%20—%20Menu,%20Franchise,%20Gossips?" class="btn btn-success rounded-circle shadow position-fixed d-flex align-items-center justify-content-center" style="bottom: 20px; right: 20px; width: 70px; height: 70px; z-index: 9999;" target="_blank" title="Chat with us on WhatsApp"><i class="fab fa-whatsapp fa-lg text-white"></i></a>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        new Typed('#typed', {
+          strings: ['100+ varieties of teas', 'Kulhad ki Khushboo', 'Ghar Jaisa Sukoon', 'Experience India’s most heartfelt chai cafe'],
+          typeSpeed: 55,
+          backSpeed: 35,
+          backDelay: 1800,
+          loop: true,
+          smartBackspace: true,
+          showCursor: true,
+          cursorChar: '|'
+        })
+      })
+    </script>
+    <script>
+      AOS.init()
+    </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        new Swiper('.reviewSwiper', {
+          slidesPerView: 1,
+          spaceBetween: 20,
+          loop: true,
+          autoplay: {
+            delay: 3000,
+            disableOnInteraction: false
+          },
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true
+          },
+          breakpoints: {
+            768: { slidesPerView: 2 },
+            992: { slidesPerView: 3 }
+          }
+        })
+      })
+    </script>
+    {% if messages %}
+      <script>
+        const messageModal = new bootstrap.Modal(document.getElementById('messageModal'))
+        messageModal.show()
+      </script>
+    {% endif %}
+  </body>
+</html>

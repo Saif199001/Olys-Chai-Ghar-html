@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Dancing+Script&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="./static/style.css" />
+    <title>
+      Home | Oly's Chai-Ghar
+    </title>
+  </head>
+  <body style="background-color: #2AAA8A;">
+    <!-- Top Header -->
+    <div class="py-2 border-bottom">
+      <div class="container d-flex justify-content-between align-items-center flex-wrap text-dark small">
+        <!-- Left: Contact Info -->
+        <div class="mb-2 mb-md-0">
+          <i class="bi bi-envelope-fill me-2 text-white"></i><strong class="text-white">olyschaighar@gmail.com</strong>
+          <span class="mx-3 text-white">|</span>
+          <i class="bi bi-telephone-fill me-2 text-white"></i><strong class="text-white">+91 98107 87715</strong>
+        </div>
+
+        <!-- Right: Social Icons -->
+        <div>
+          <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="text-white me-3"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" class="text-white"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg py-3">
+      <div class="container">
+        <!-- Brand/Logo -->
+        <a class="navbar-brand d-flex flex-column align-items-start" href="{% url 'home' %}">
+          <div class="d-flex align-items-center">
+            <span class="fs-2 fw-bold" style="font-family: 'Pacifico', cursive; color: #ffa347;">Oly’s</span>
+            <span class="fs-5 fw-bold ms-1 text-warning">Chai-Ghar</span>
+          </div>
+          <small class="text-light text-warning ms-1" style="font-size: 1rem;">Tea | Snacks | Gossips</small>
+        </a>
+
+        <!-- Toggler for mobile -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+
+        <!-- Navigation Menu -->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarMenu">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-light fw-semibold mx-2" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light fw-semibold mx-2" href="./menu.html">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light fw-semibold mx-2" href="./about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light fw-semibold mx-2" href="./frenchisee.html">Franchise</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light fw-semibold mx-2" href="./contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light fw-semibold mx-2" href="./gallery.html">Gallery</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- HERO / BANNER -->
+  <section class="hero d-flex align-items-center">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Left: Text -->
+        <div class="col-lg-6">
+          <h1 class="display-4 fw-bold text-light mb-3">Oly’s Chai-Ghar <span style="color: #ff7b00;">offers</span></h1>
+
+          <h2 class="typed-line text-light"><span id="typed"></span></h2>
+
+          <p class="lead text-light-50 mt-3">Warm ambience • Natural & Organic • Cozy Vibe</p>
+
+          <div class="mt-4">
+            <a href="./menu.html" class="btn btn-warning btn-lg me-3">See Menu</a>
+            <a href="./frenchisee.html" class="btn btn-outline-light btn-lg">Franchise Enquiry</a>
+          </div>
+        </div>
+
+        <!-- Right: Image -->
+        <div class="col-lg-6 my-4 mt-lg-0 d-flex justify-content-center" data-aos="fade-left" data-aos-duration="1000">
+          <img src="./static/images/olys50.jpeg" class="img-fluid w-100" style="max-width: 700px; height: auto;" alt="India Map with Oly's Locations" />
+        </div>
+      </div>
+    </div>
+    <!-- optional dark overlay -->
+    <div class="hero-overlay"></div>
+  </section>
+  <section id="about" class="py-5 bg-light">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Image Column -->
+        <div class="col-md-6 mb-4 mb-md-0" data-aos="fade-right" data-aos-duration="1000">
+          <img src="./static/images/olys5.png" class="img-fluid rounded shadow" alt="About Oly's Chai Ghar" />
+        </div>
+
+        <!-- Text Column -->
+        <div class="col-md-6">
+          <h2 class="fw-bold text-dark mb-3" data-aos="fade-left" data-aos-duration="1000">Welcome to <span style="color: #ff7b00;">Oly's Chai-Ghar</span></h2>
+          <p class="lead text-muted" data-aos="fade-left" data-aos-duration="1000">
+            Brewing joy, one kullhad at a time! At <strong>Oly’s Chai-Ghar</strong>, we serve over <span class="text-dark fw-bold">100+ unique chai varieties</span>—from cutting chai to exotic herbal fusions—crafted with love and a sprinkle of tradition.
+          </p>
+          <h4 class="lead text-muted" data-aos="fade-left" data-aos-duration="1000"><span class="text-dark fw-bold">We didn’t create a tea cafe -</span></h4>
+          <ul class="list-unstyled" data-aos="fade-left" data-aos-duration="1000">
+            <li class="text-muted">We created a feeling.</li>
+            <li class="text-muted">The kind that reminds you of home.</li>
+            <li class="text-muted">It’s the steam that rises with your thoughts.</li>
+          </ul>
+          <a href="./menu.html" class="btn btn-warning px-4 mt-3">Explore Our Teas</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="py-5" id="why-choose-us">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up" data-aos-duration="1000">
+        <h2 class="fw-bold text-white">Why Choose <span style="color: #ff7b00;">Oly’s Chai-ghar?</span></h2>
+        <p class="text-white" data-aos="fade-up" data-aos-duration="1000">We serve more than tea — we serve comfort, flavor, and tradition.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3 text-center" data-aos="fade-up" data-aos-duration="1000">
+          <div class="p-4 border rounded shadow-sm h-100">
+            <i class="h1 bi bi-cup-hot text-warning"></i>
+            <h5 class="fw-semibold text-warning">100+ Tea Varieties</h5>
+            <p class="text-white small">From classic masala to exotic herbal blends — explore endless flavors.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 text-center" data-aos="fade-up" data-aos-duration="1000">
+          <div class="p-4 border rounded shadow-sm h-100">
+            <i class="bi bi-house-heart fs-1 text-warning"></i>
+            <h5 class="fw-semibold text-warning">Ghar jaisa swaad</h5>
+            <p class="text-white small">Har sip me maa ke haathon wali warmth.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 text-center" data-aos="fade-up" data-aos-duration="1000">
+          <div class="p-4 border rounded shadow-sm h-100">
+            <i class="bi bi-cup-hot-fill fs-1 text-warning"></i>
+            <h5 class="fw-semibold text-warning">Served in Kullhads</h5>
+            <p class="text-white small">Savor your chai in eco-friendly earthen cups that add nostalgic aroma.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 text-center" data-aos="fade-up" data-aos-duration="1000">
+          <div class="p-4 border rounded shadow-sm h-100">
+            <i class="bi bi-emoji-smile-fill fs-1 text-warning"></i>
+            <h5 class="fw-semibold text-warning">Family-like Atmosphere</h5>
+            <p class="text-white small">A cozy place where strangers become friends over a cup of chai.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 text-center" data-aos="fade-up" data-aos-duration="1000">
+          <div class="p-4 border rounded shadow-sm h-100">
+            <i class="bi bi-gem fs-1 text-warning"></i>
+            <h5 class="fw-semibold text-warning">Premium ingredients</h5>
+            <p class="text-white small">Chuni hui chai patti aur asli masale.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 text-center" data-aos="fade-up" data-aos-duration="1000">
+          <div class="p-4 border rounded shadow-sm h-100">
+            <i class="bi bi-flower1 fs-2 text-danger me-1"></i><i class="bi bi-stars fs-2 text-warning"></i>
+            <h5 class="fw-semibold text-warning">Desi vibes + Modern touch</h5>
+            <p class="text-white small">Ek aisi jagah jahan chai bhi cool hai!</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 text-center" data-aos="fade-up" data-aos-duration="1000">
+          <div class="p-4 border rounded shadow-sm h-100">
+            <i class="bi bi-cash-coin fs-2 text-warning"></i>
+            <h5 class="fw-semibold text-warning">Pocket-friendly pricing</h5>
+            <p class="text-white small">Taste bhi kadak, price bhi light.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 text-center" data-aos="fade-up" data-aos-duration="1000">
+          <div class="p-4 border rounded shadow-sm h-100">
+            <i class="bi bi-emoji-smile fs-2 text-warning"></i>
+            <h5 class="fw-semibold text-warning">Har mood ke liye perfect</h5>
+            <p class="text-white small">Solo chill ho ya doston ke saath gupshup.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="py-5 text-center" id="map">
+    <div class="container">
+      <h2 class="mb-4 fw-bold" data-aos="fade-up" data-aos-duration="1000" style="font-family: 'Pacifico', cursive; color: #ff7b00;">Where You Find Oly’s Chai-ghar</h2>
+      <p class="mb-5 text-white" data-aos="fade-up" data-aos-duration="1000">Spreading warmth across the nation</p>
+
+      <div class="d-flex justify-content-center" data-aos="fade-up" data-aos-duration="1000">
+        <img src="./static/images/olysindiamap.png" class="img-fluid" style="max-width: 700px;" alt="India Map with Oly's Locations" />
+      </div>
+
+      <div class="mt-4 row justify-content-center">
+        <div class="col-md-2">
+          <span class="badge bg-warning text-dark">Delhi</span>
+        </div>
+        <div class="col-md-2">
+          <span class="badge bg-warning text-dark">Mumbai</span>
+        </div>
+        <div class="col-md-2">
+          <span class="badge bg-warning text-dark">Lucknow</span>
+        </div>
+        <div class="col-md-2">
+          <span class="badge bg-warning text-dark">Hyderabad</span>
+        </div>
+        <div class="col-md-2">
+          <span class="badge bg-warning text-dark">Patna</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="py-5 bg-light" id="reviews">
+    <div class="container">
+      <div class="text-center mb-4" data-aos="fade-up" data-aos-duration="1000">
+        <h2 class="fw-bold" style="color: #ff7b00;">What Our Chai Lovers Say</h2>
+        <p class="text-muted">Real experiences from real people enjoying Oly’s Chai-Ghar vibes ☕</p>
+      </div>
+
+      <div class="swiper reviewSwiper">
+        <div class="swiper-wrapper">
+          <!-- Slide 1 -->
+          <div class="swiper-slide" style="background-color: #2AAA8A;">
+            <div class="card h-100 shadow-sm border-0 p-4 rounded-4" data-aos="fade-up" data-aos-delay="5000">
+              <div class="d-flex align-items-center mb-3">
+                <img src="https://i.pravatar.cc/60?img=1" class="rounded-circle me-3" alt="Reviewer 1" />
+                <div>
+                  <h6 class="mb-0 fw-semibold">Priya Sharma</h6>
+                  <small class="text-muted">Delhi</small>
+                </div>
+              </div>
+              <p class="text-muted">“Kullhad wali chai and toast combo is unbeatable. It truly feels like home here!”</p>
+              <div class="text-warning">★★★★★</div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="swiper-slide" style="background-color: #2AAA8A;">
+            <div class="card h-100 shadow-sm border-0 p-4 rounded-4" data-aos="fade-up" data-aos-delay="5000">
+              <div class="d-flex align-items-center mb-3">
+                <img src="https://i.pravatar.cc/60?img=2" class="rounded-circle me-3" alt="Reviewer 2" />
+                <div>
+                  <h6 class="mb-0 fw-semibold">Ankit Verma</h6>
+                  <small class="text-muted">Lucknow</small>
+                </div>
+              </div>
+              <p class="text-muted">“So many varieties of tea! Loved the masala chai with desi vibes & pocket-friendly prices.”</p>
+              <div class="text-warning">★★★★☆</div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="swiper-slide" style="background-color: #2AAA8A;">
+            <div class="card h-100 shadow-sm border-0 p-4 rounded-4" data-aos="fade-up" data-aos-delay="5000">
+              <div class="d-flex align-items-center mb-3">
+                <img src="https://i.pravatar.cc/60?img=3" class="rounded-circle me-3" alt="Reviewer 3" />
+                <div>
+                  <h6 class="mb-0 fw-semibold">Megha Jain</h6>
+                  <small class="text-muted">Bhopal</small>
+                </div>
+              </div>
+              <p class="text-muted">“Ambience is just perfect for chai lovers. It’s my new favorite adda!”</p>
+              <div class="text-warning">★★★★★</div>
+            </div>
+          </div>
+          <div class="swiper-slide" style="background-color: #2AAA8A;">
+            <div class="card h-100 shadow-sm border-0 p-4 rounded-4" data-aos="fade-up" data-aos-delay="5000">
+              <div class="d-flex align-items-center mb-3">
+                <img src="https://i.pravatar.cc/60?img=4" class="rounded-circle me-3" alt="Reviewer 4" />
+                <div>
+                  <h6 class="mb-0 fw-semibold">Rahul Aggarwal</h6>
+                  <small class="text-muted">Patna</small>
+                </div>
+              </div>
+              <p class="text-muted">“The chai is not just tea; it's a journey of flavors. Highly recommend!”</p>
+              <div class="text-warning">★★★★★</div>
+            </div>
+          </div>
+          <!-- Add more swiper-slide divs here -->
+        </div>
+
+        <!-- Pagination (dots) -->
+        <div class="swiper-pagination mt-4"></div>
+      </div>
+    </div>
+  </section>
+  <section class="py-5 text-center text-dark">
+    <div class="container">
+      <h2 class="display-5 fw-bold" style="color: #ff7b00; font-family: 'Pacifico', cursive;">Own an Oly's Chai-Ghar Franchise</h2>
+      <p class="lead text-white mb-4">Be a part of India’s favorite tea cafe <strong style="font-family: 'Pacifico', cursive;">Oly's Chai-Ghar</strong>. Low investment, full support, and high profits.</p>
+      <a href="./frenchisee.html" class="btn btn-warning btn-lg px-5 py-3">Apply for Franchise</a>
+
+      <div class="row mt-5">
+        <div class="col-md-4 mb-3">
+          <div class="bg-light p-4 rounded shadow-sm">
+            <h5 class="fw-bold">Low Investment</h5>
+            <p>Start with minimal capital and scale easily.</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="bg-light p-4 rounded shadow-sm">
+            <h5 class="fw-bold">Brand Recognition</h5>
+            <p>Leverage our brand value & loyal customers.</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="bg-light p-4 rounded shadow-sm">
+            <h5 class="fw-bold">Complete Support</h5>
+            <p>From setup to training – we guide you end-to-end.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <footer class="text-white pt-5 pb-4 text-white border-top">
+      <div class="container text-md-left">
+        <div class="row text-md-left">
+          <!-- Company Info -->
+          <div class="col-md-4 col-lg-4 col-xl-3 mx-auto mt-3">
+            <span class="fs-2 fw-bold text-warning" style="font-family: 'Pacifico', cursive;">Oly’s</span>
+            <span class="fs-5 ms-1 text-light" style="font-family: 'Dancing Script', cursive;">Chai-ghar</span>
+            <p>Serving 100+ tea varieties with ghar jaisa swaad. A perfect place for chai lovers and cozy conversations.</p>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold text-light" >Quick Links</h5>
+            <p>
+              <a href="./about.html" class="text-white" style="text-decoration: none;">About Us</a>
+            </p>
+            <p>
+              <a href="./menu.html" class="text-white" style="text-decoration: none;">Menu</a>
+            </p>
+            <p>
+              <a href="./frenchisee.html" class="text-white" style="text-decoration: none;">Frenchisee</a>
+            </p>
+            <p>
+              <a href="./contact.html" class="text-white" style="text-decoration: none;">Contact</a>
+            </p>
+          </div>
+
+          <!-- Franchise CTA -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold text-light">Join Us</h5>
+            <p>
+              <a href="/frenchisee.html" class="text-white" style="text-decoration: none;">Get Franchise</a>
+            </p>
+            <p>
+              <a href="#career" class="text-white" style="text-decoration: none;">Careers</a>
+            </p>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold text-light">Contact</h5>
+            <p>
+              <i class="fas fa-home mr-3"></i> Head Office: Third Floor, Property No. 6, Avtar Enclave, Paschim Vihar, New Delhi - 110063 (India)
+            </p>
+            <p>
+              <i class="fas fa-envelope mr-3"></i> olyschaighar@gmail.com
+            </p>
+            <p>
+              <i class="fas fa-phone mr-3"></i> +91 98107 87715
+            </p>
+          </div>
+        </div>
+
+        <hr class="mb-4" />
+
+        <!-- Bottom Row -->
+        <div class="row align-items-center">
+          <div class="col-md-7 col-lg-8">
+            <p>
+              © 2025 <strong>Oly’s Chai-Ghar</strong> — All Rights Reserved
+            </p>
+          </div>
+          <div class="col-md-5 col-lg-4">
+            <div class="text-center text-md-right">
+              <a href="#" class="text-white me-4"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="text-white me-4"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="text-white me-4"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="text-white"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <a href="https://wa.me/9810787715?text=Hi%20Oly's%20Chai%2C%20Ghar!%20I'm%20brewing%20some%20curiosity.%20Let’s%20talk%20—%20Menu,%20Franchise,%20Gossips?" class="btn btn-success rounded-circle shadow position-fixed d-flex align-items-center justify-content-center" style="bottom: 20px; right: 20px; width: 70px; height: 70px; z-index: 9999;" target="_blank" title="Chat with us on WhatsApp"><i class="fab fa-whatsapp fa-lg text-white"></i></a>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        new Typed('#typed', {
+          strings: ['100+ varieties of teas', 'Kulhad ki Khushboo', 'Ghar Jaisa Sukoon', 'Experience India’s most heartfelt chai cafe'],
+          typeSpeed: 55,
+          backSpeed: 35,
+          backDelay: 1800,
+          loop: true,
+          smartBackspace: true,
+          showCursor: true,
+          cursorChar: '|'
+        })
+      })
+    </script>
+    <script>
+      AOS.init()
+    </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        new Swiper('.reviewSwiper', {
+          slidesPerView: 1,
+          spaceBetween: 20,
+          loop: true,
+          autoplay: {
+            delay: 3000,
+            disableOnInteraction: false
+          },
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true
+          },
+          breakpoints: {
+            768: { slidesPerView: 2 },
+            992: { slidesPerView: 3 }
+          }
+        })
+      })
+    </script>
+    {% if messages %}
+      <script>
+        const messageModal = new bootstrap.Modal(document.getElementById('messageModal'))
+        messageModal.show()
+      </script>
+    {% endif %}
+  </body>
+</html>
